@@ -15,9 +15,7 @@ class MySingleton:
     def getId(self):
         self._id
         return self._id
-        
-    def __str__(self):
-        return f"Nombre: {self._nombre}"
+
     
 mysingleton1 = MySingleton()
 mysingleton2 = MySingleton()
