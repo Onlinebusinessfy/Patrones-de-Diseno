@@ -1,33 +1,36 @@
 package models;
 
 public class Dimension {
+    private float horizontal; // ancho
+    private float vertical;   // alto
 
-    private float ancho;
-    private float alto;
-
+    // Constructor por defecto
     public Dimension() {
-        this.ancho = 0f;
-        this.alto = 0f;
+        this.horizontal = 50;
+        this.vertical = 50;
     }
 
-    public Dimension(float ancho, float alto) {
-        this.ancho = ancho;
-        this.alto = alto;
+    // Constructor con parámetros
+    public Dimension(float horizontal, float vertical) {
+        this.horizontal = horizontal;
+        this.vertical = vertical;
     }
 
-    public float getAncho() {
-        return ancho;
+    // Getters
+    public float getHorizontal() {
+        return horizontal;
     }
 
-    public float getAlto() {
-        return alto;
+    public float getVertical() {
+        return vertical;
     }
 
-    public void setAncho(float ancho) {
-        this.ancho = ancho;
+    // Setters
+    public void setHorizontal(float horizontal) {
+        this.horizontal = horizontal;
     }
 
-    public void setAlto(float alto) {
-        this.alto = alto;
+    public void setVertical(float vertical) {
+        this.vertical = vertical;
     }
 }
