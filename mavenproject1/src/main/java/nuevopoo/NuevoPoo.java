@@ -6,8 +6,11 @@ import models.Circulo;
 import models.Dimension;
 import models.Posicion;
 import models.Borde;
+import models.Carro;
 
 public class NuevoPoo extends PApplet {
+    
+    Carro carro;
 
     // Calle
     Caja calle;
@@ -94,6 +97,15 @@ public class NuevoPoo extends PApplet {
             new Borde(3, color(0)),
             color(50)
         );
+        
+        carro = new Carro();
+        
+        carro.agregarParte(cuerpo);
+        carro.agregarParte(techo);
+        carro.agregarParte(ventana1);
+        carro.agregarParte(ventana2);
+        carro.agregarParte(llanta1);
+        carro.agregarParte(llanta2);
     }
 
     @Override
@@ -108,14 +120,9 @@ public class NuevoPoo extends PApplet {
         linea2.dibujar(this);
         linea3.dibujar(this);
         linea4.dibujar(this);
-
-        // Dibujar carrito
-        cuerpo.dibujar(this);
-        techo.dibujar(this);
-        ventana1.dibujar(this);
-        ventana2.dibujar(this);
-        llanta1.dibujar(this);
-        llanta2.dibujar(this);
+        
+        carro.moverHorizontal();
+        carro.dibujar(this);
     }
 
     public static void main(String[] args) {

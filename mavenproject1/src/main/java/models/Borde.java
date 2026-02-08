@@ -8,7 +8,7 @@ public class Borde {
     // constructor por defecto
     public Borde() {
         this.ancho = 1;
-        this.color = 0; // negro
+        this.color = 0;
     }
 
     // constructor con parámetros
