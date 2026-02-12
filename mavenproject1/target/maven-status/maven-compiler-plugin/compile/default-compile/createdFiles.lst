@@ -7,5 +7,6 @@ models\Circulo.class
 nuevopoo\NuevoPoo.class
 com\mycompany\mavenproject1\Mavenproject1.class
 models\Figura.class
+nuevopoo\InterfaceFiguras.class
 models\Dimension.class
 models\Posicion.class

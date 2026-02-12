@@ -1,8 +1,10 @@
 package models;
 
 import processing.core.PApplet;
+import nuevopoo.InterfaceFiguras;
 
-public abstract class Figura {
+
+abstract class Figura implements InterfaceFiguras{
 
     protected Posicion posicion;
     protected Dimension dimension;
@@ -68,10 +70,17 @@ public abstract class Figura {
         }
         p.fill(color);
     }
-
+    
+    @Override
     public void moverHorizontal(){
         float nuevaX = this.getPosicion().getX() + 1;
         this.getPosicion().setX(nuevaX);
+    }
+    
+    @Override
+    public void moverVertical(){
+    float nuevaY = this.getPosicion().getY() + 1;
+    this.getPosicion().setY(nuevaY);
     }
 
     // Cada figura decide cómo dibujarse

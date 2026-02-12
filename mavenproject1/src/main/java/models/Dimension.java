@@ -1,8 +1,8 @@
 package models;
 
 public class Dimension {
-    private float horizontal; // ancho
-    private float vertical;   // alto
+    private float horizontal;
+    private float vertical;
 
     // Constructor por defecto
     public Dimension() {

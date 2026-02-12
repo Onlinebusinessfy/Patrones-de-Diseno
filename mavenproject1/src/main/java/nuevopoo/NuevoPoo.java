@@ -121,10 +121,25 @@ public class NuevoPoo extends PApplet {
         linea3.dibujar(this);
         linea4.dibujar(this);
         
-        carro.moverHorizontal();
+        carro.moverHorizontal(width);
         carro.dibujar(this);
     }
-
+    
+    @Override
+    public void keyPressed(){
+        if(keyCode == RIGHT){
+            carro.setDireccion(1);
+        }
+        if(keyCode == LEFT){
+            carro.setDireccion(-1);
+        }
+    }
+    
+    @Override
+    public void keyReleased(){
+        carro.setDireccion(0);
+    }
+    
     public static void main(String[] args) {
         PApplet.main("nuevopoo.NuevoPoo");
     }
