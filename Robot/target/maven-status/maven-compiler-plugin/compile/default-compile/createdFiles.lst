@@ -1,0 +1,11 @@
+models\Caja.class
+NuevoPoo\InterfaceFiguras.class
+models\Borde.class
+models\Elipse.class
+com\mycompany\robot\Robot.class
+main\NuevoPoo.class
+models\Robot.class
+NuevoPoo\Config.class
+models\Figura.class
+models\Dimension.class
+models\Posicion.class
